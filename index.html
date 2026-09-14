@@ -1,78 +1,102 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>刘雨悦 - 个人简历</title>
-  <meta name="description" content="刘雨悦 — 艺术科技与商业理学硕士">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="name">刘雨悦</h1>
-      <p class="subtitle">艺术科技与商业理学硕士</p>
-      <nav class="top-nav">
-        <a href="#about">关于</a>
-        <a href="#education">教育</a>
-        <a href="#skills">技能</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系方式</a>
-      </nav>
+      <div class="name-block">
+        <h1 class="name">刘雨悦</h1>
+        <p class="tagline">艺术科技与商业理学硕士</p>
+      </div>
+      <div class="meta">
+        <p>邮箱: <a href="mailto:2711365820@qq.com">2711365820@qq.com</a></p>
+        <button id="downloadPdf" class="btn">下载简历（PDF）</button>
+        <button id="toggleTheme" class="btn ghost">切换主题</button>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="card">
+  <main class="container main-grid">
+    <section class="profile card">
       <h2>关于我</h2>
-      <p>我是一名专注于艺术、科技与商业交叉领域的研究者/从业者，擅长将创意设计与技术实现相结合，关注以用户体验为本的产品与项目落地。</p>
+      <p>艺术与科技的交叉拥趸，关注创意、体验与商业之间的结合。擅长把复杂问题拆解为可执行的项目，并以用户为中心设计研究与落地实施流程。</p>
     </section>
 
-    <section id="education" class="card">
-      <h2>教育</h2>
-      <ul>
-        <li>
-          <strong>艺术科技与商业理学硕士</strong><br>
-          （专业方向 / 学校名称 可在此补充）
-        </li>
-      </ul>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>技能</h2>
-      <ul class="skills-list">
-        <li>艺术设计 / 交互设计</li>
-        <li>前端开发：HTML, CSS, JavaScript</li>
-        <li>原型与用户研究</li>
-        <li>跨学科项目管理</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>项目与实践</h2>
+    <section class="experience card">
+      <h2>工作经历</h2>
       <article>
-        <h3>示例项目名称</h3>
-        <p>简要描述项目目标、你的角色与成果。可列出链接或演示（如有）。</p>
+        <h3>职位 / 公司 名称（示例）</h3>
+        <p class="muted">起止时间 • 城市</p>
+        <ul>
+          <li>简短描述岗位职能、关键成果与使用过的工具或方法。</li>
+          <li>用数字量化成果（例如：提升 xx%，或负责 xx 人团队）。</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>职位 / 公司 名称（示例）</h3>
+        <p class="muted">起止时间 • 城市</p>
+        <ul>
+          <li>职责要点 1</li>
+          <li>职责要点 2</li>
+        </ul>
       </article>
     </section>
 
-    <section id="contact" class="card">
-      <h2>联系方式</h2>
-      <p>电子邮箱：<a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>电话：+86 138 0000 0000（可选）</p>
-      <p>个人主页 / 作品集：<a href="#">（填写链接）</a></p>
+    <section class="education card">
+      <h2>教育</h2>
+      <p><strong>艺术科技与商业理学硕士</strong></p>
+      <p class="muted">（学校名称） • 毕业年份（示例）</p>
+      <ul>
+        <li>研究方向 / 论文题目（如有）</li>
+        <li>相关课程：创意编程 / 数据可视化 / 交互设计 等</li>
+      </ul>
+    </section>
+
+    <section class="skills card">
+      <h2>技能</h2>
+      <ul class="skills-grid">
+        <li>设计思维</li>
+        <li>用户研究</li>
+        <li>交互设计</li>
+        <li>原型与可视化</li>
+        <li>项目管理</li>
+        <li>工具：Figma / Adobe / Processing / Python（示例）</li>
+      </ul>
+    </section>
+
+    <section class="projects card">
+      <h2>项目</h2>
+      <article>
+        <h3>项目名称（示例）</h3>
+        <p class="muted">角色 • 时间</p>
+        <p>简要说明项目目标、你负责的内容和取得的成果。</p>
+      </article>
+      <article>
+        <h3>项目名称（示例）</h3>
+        <p class="muted">角色 • 时间</p>
+        <p>简要说明项目目标、你负责的内容和取得的成果。</p>
+      </article>
+    </section>
+
+    <section class="contact card">
+      <h2>联系</h2>
+      <p>邮箱：<a href="mailto:2711365820@qq.com">2711365820@qq.com</a></p>
+      <p>更多：可在此放置个人网站 / 作品集 / Github / LinkedIn 链接。</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> 刘雨悦 • 面向艺术与科技的跨学科实践。</p>
+      <p>© 刘雨悦 · 简洁现代个人简历模板</p>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
