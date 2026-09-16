@@ -3,81 +3,136 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>刘雨悦 — 个人简历</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>刘雨悦 · 个人简历</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-    <header class="hero">
-      <div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
         <h1>刘雨悦</h1>
-        <p class="subtitle">艺术科技与商业理学硕士</p>
-        <p class="contact">✉️ 2711365820@qq.com</p>
+        <p class="subtitle">艺术科技与商业理学（研究生）</p>
       </div>
-    </header>
+      <div class="nav-contact">
+        <a class="email" href="mailto:2711365820@qq.com">2711365820@qq.com</a>
+        <a class="btn" href="刘雨悦3063273.pdf" download>下载 PDF</a>
+      </div>
+    </div>
+  </header>
 
-    <section class="card">
-      <h2>个人简介</h2>
-      <p>跨界融合艺术、科技与商业的复合型研究/实践者，擅长将创意与数据/技术结合，推进以用户与体验为核心的项目落地。偏好简洁、现代的设计语言与可执行的产品策略。</p>
-    </section>
+  <main class="container main-grid">
+    <aside class="sidebar">
+      <div class="photo-placeholder">LY</div>
+      <h2 class="name">刘雨悦</h2>
+      <p class="role">艺术科技与商业理学 硕士（岭南大学，2026.09 — 2027.09）</p>
 
-    <section class="two-col">
-      <div class="card">
+      <section class="contact-card card">
+        <h3>联系方式</h3>
+        <p class="muted">邮箱：<button id="copyEmail" class="link-btn">2711365820@qq.com</button></p>
+        <p class="muted">电话：——（请补充）</p>
+        <p class="muted">作品：——（可填个人网站/作品集）</p>
+      </section>
+
+      <section class="card">
+        <h3>技能</h3>
+        <ul class="skill-list">
+          <li>Photoshop / Illustrator / 3ds Max</li>
+          <li>Premiere Pro / After Effects / Cinema 4D / Cubase</li>
+          <li>Figma / Sketch / 原型设计</li>
+          <li>Word / Excel / PowerPoint</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>证书</h3>
+        <ul class="muted">
+          <li>全国计算机一级</li>
+          <li>绘画八级</li>
+          <li>教师资格证</li>
+          <li>普通话二级乙等</li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="content">
+      <section id="about" class="card">
+        <h2>个人简介</h2>
+        <p class="muted">跨界融合艺术、科技与商业，擅长在设计与多媒体制作中融合技术与交互，关注科普与教育类产品的界面与体验。具备从调研、设计到落地的项目经验。</p>
+      </section>
+
+      <section id="education" class="card">
         <h2>教育背景</h2>
-        <ul class="list">
-          <li>
-            <strong>学位：</strong> 艺术科技与商业理学硕士
-            <br />
-            <strong>学校：</strong> （请补充学校名称）
-            <br />
-            <strong>在读/毕业时间：</strong> （请补充起止年月）
-          </li>
+
+        <div class="edu-item">
+          <h3>香港岭南大学 — 艺术科技与商业理学（研究生）</h3>
+          <p class="meta">2026.09 — 2027.09（在读/研究生）</p>
+        </div>
+
+        <div class="edu-item">
+          <h3>上海师范大学天华学院 — 数字媒体艺术（本科）</h3>
+          <p class="meta">2021.09 — 2025.07</p>
+          <p><strong>主修课程：</strong>新媒体技术 / 影视后期合成 / 影视短片创作 / 艺术概论 / 界面设计 / 人工智能辅助设计 / 二维动画设计 / 摄影摄像基础 / 三维建模 / 马克思主义基本原理</p>
+
+          <p><strong>毕业论文：</strong>《星际探索者 —— 星系科普 H5 界面设计与制作》。通过前期调研发现公众获取天文知识途径有限，运用 Adobe XD、Photoshop 和 After Effects 设计并制作科普界面；绘制图标与画面并进行后期处理，添加互动元素与动画，采用深空视觉风格，界面融合图文、动画及互动问答，提供交互式学习体验，生动展示星系结构与演化，并具备在线分享传播功能。</p>
+        </div>
+      </section>
+
+      <section id="campus" class="card">
+        <h2>校园经历</h2>
+
+        <div class="exp-item">
+          <h4>志愿者 — 上海师范大学天华学院</h4>
+          <p class="meta">2021.09 — 2022.09</p>
+          <p class="muted">负责旧衣物分类、整理与记录，协助品牌开展公益回收活动并支持环保宣传，提升活动执行效率与社区参与度。</p>
+        </div>
+
+        <div class="exp-item">
+          <h4>辩手 — 上海师范大学天华学院</h4>
+          <p class="meta">2021.09 — 2022.09</p>
+          <p class="muted">担任多个辩位，负责立论、反驳与临场答辩，锻炼逻辑表达、临场应变与团队协作能力。</p>
+        </div>
+      </section>
+
+      <section id="experience" class="card">
+        <h2>实践经历</h2>
+
+        <div class="exp-item">
+          <h4>平面设计助理 — 安徽宣晖建筑工程有限公司</h4>
+          <p class="meta">2024.10 — 2024.12</p>
+          <p class="muted">整合方案文本、技术图纸与数据，制作分析图与效果图；负责投标文件的专业排版与美化；维护企业品牌与项目视觉系统，提升对外提案表现力。</p>
+        </div>
+
+        <div class="exp-item">
+          <h4>信息流剪辑助理 — 合肥种梦文化传媒有限公司</h4>
+          <p class="meta">2026.05 — 2026.05</p>
+          <p class="muted">根据短剧行业广告创意需求，完成短剧投放素材制作，包含剪辑、混剪与二次创作，提升广告素材的投放效果。</p>
+        </div>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>专业技能 & 证书</h2>
+        <ul class="skills-list">
+          <li><strong>软件：</strong>Photoshop / Illustrator / 3ds Max / Premiere Pro / After Effects / Cinema 4D / Cubase</li>
+          <li><strong>办公：</strong>Word / Excel / PowerPoint</li>
+          <li><strong>证书：</strong>全国计算机一级、绘画八级、教师资格证、普通话二级乙</li>
+          <li><strong>其他：</strong>活动组织与数据分析能力，文案撰写与跨团队协作经验</li>
         </ul>
-      </div>
+      </section>
 
-      <div class="card">
-        <h2>技能与工具</h2>
-        <ul class="tags">
-          <li>设计思维</li>
-          <li>交互设计 / 原型</li>
-          <li>创意编程（p5.js / Processing）</li>
-          <li>数据可视化</li>
-          <li>项目管理</li>
-          <li>用户研究</li>
-        </ul>
-      </div>
+      <section id="contact" class="card">
+        <h2>联系与更多</h2>
+        <p class="muted">如需查看完整作品集或项目演示，请通过邮箱联系或直接下载简历 PDF。</p>
+        <p><a class="btn" href="刘雨悦3063273.pdf" download>下载 PDF 简历</a></p>
+      </section>
     </section>
-
-    <section class="card">
-      <h2>校园经历</h2>
-      <ul class="list">
-        <li>
-          <strong>（请补充）</strong> — 职务/角色（例如：学生会/社团负责人）
-          <br />职责与成果：请在此处补充你在校园内承担的主要工作、组织的活动或获得的荣誉。
-        </li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>实践经历 / 项目</h2>
-      <ul class="list">
-        <li>
-          <strong>（请补充项目或实习名称）</strong>
-          <br />时间：
-          <br />职责与贡献：请补充你负责的部分、使用的工具与取得的成果（数字化描述更有说服力，例如用户数、提升百分比、展览/获奖等）。
-        </li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>其他信息</h2>
-      <p>语言：中文（母语），英语（请补充水平）。</p>
-      <p>作品集 / 项目展示：如有链接，请补充（例如：个人网站 / GitHub / Behance）。</p>
-    </section>
-
-    <footer class="footer">
-      <p>需要我把“请补充”的部分用 从 PDF 中可以提取到的具体内容替换吗？或者把更多细节发给我，我可以直接完善并合并到主分支，或帮你部署。</p>
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© 刘雨悦 · 简历</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
