@@ -1,0 +1,27 @@
+/* style.css — 简洁、现代风格 */
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#1f6feb;
+  --muted:#6b7280;
+  --radius:12px;
+  --maxw:900px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Noto Sans,"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial;
+  background:linear-gradient(180deg,var(--bg),#ffffff);color:#111827; -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--maxw);margin:36px auto;padding:24px}
+.hero{display:flex;align-items:center;gap:20px;background:linear-gradient(90deg,#fff,#f8fafc);padding:22px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.hero h1{margin:0;font-size:28px}
+.subtitle{color:var(--accent);margin-top:6px;font-weight:600}
+.contact{color:var(--muted);margin-top:8px}
+.card{background:var(--card);padding:18px;border-radius:12px;margin-top:18px;box-shadow:0 2px 6px rgba(11,15,26,0.04)}
+.two-col{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+.list{margin:0;padding-left:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px}
+.footer{margin-top:22px;color:var(--muted);font-size:14px}
+@media (max-width:800px){.two-col{grid-template-columns:1fr}.container{padding:16px}}
